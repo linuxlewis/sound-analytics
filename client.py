@@ -29,7 +29,7 @@ def event():
 #register client
 ip = socket.gethostbyname(socket.gethostname())
 data = urlencode({'ip': ip})
-register = urllib2.Request("http://192.168.1.119:1337/register")
+register = urllib2.Request("http://192.168.1.119:8080/register")
 register.add_data(data)
 urllib2.urlopen(register).read()
 app.run(port=port)
