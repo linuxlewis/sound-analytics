@@ -2,6 +2,7 @@ from flask import Flask, request, json
 import urllib2
 import time
 from threading import Timer
+import grequests
 
 app = Flask(__name__)
 port = 1337
@@ -37,10 +38,9 @@ def check_alive():
 def send_update(event):
 	print '**** SENDING UPDATE ****'
 	for listener in listeners:
-		request = urllib2.Request("http://"+listener+":"+str(port)+"/event", event, {'Content-Type':'application/json'})
-		print request.get_full_url()
+		#request = urllib2.Request("http://"+listener+":"+str(port)+"/event", event, {'Content-Type':'application/json'})
 		try:
-			urllib2.urlopen(request).read()
+			grequests.post("http://"+listener+":"+str(port)+"/event", data=event)
 		except Exception as ex:
 			print ex
 
