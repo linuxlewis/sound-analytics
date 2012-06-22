@@ -37,8 +37,7 @@ def check_alive():
 def send_update(event):
 	print '**** SENDING UPDATE ****'
 	for listener in listeners:
-		request = urllib2.Request("http://"+listener+":"+str(port)+"/event", {'Content-Type':'application/json'})
-		request.add_data(event)
+		request = urllib2.Request("http://"+listener+":"+str(port)+"/event", event, {'Content-Type':'application/json'})
 		print request.get_full_url()
 		try:
 			urllib2.urlopen(request).read()
