@@ -22,7 +22,7 @@ def email():
 
 def check_alive():
 	for listener in listeners:
-		request = urllib2.Request(listener+":"+str(port)+"/heartbeat")
+		request = urllib2.Request("http://"+listener+":"+str(port)+"/heartbeat")
 		try:
 			urllib2.urlopen(request).read()
 		except Exception as ex:
@@ -30,7 +30,7 @@ def check_alive():
 
 def send_update(event):
 	for listener in listeners:
-		request = urllib2.Request(listener+":"+str(port)+"/event")
+		request = urllib2.Request("http://"+listener+":"+str(port)+"/event")
 		request.add_data(event)
 		try:
 			urllib2.urlopen(request).read()

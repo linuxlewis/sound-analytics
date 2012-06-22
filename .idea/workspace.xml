@@ -27,7 +27,7 @@
           <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="15" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5562914">
+                <state line="31" column="34" selection-start="839" selection-end="839" vertical-scroll-proportion="0.615894">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -51,7 +51,7 @@
           <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="16" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.81858903">
+                <state line="24" column="43" selection-start="540" selection-end="540" vertical-scroll-proportion="0.37513998">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -277,7 +277,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="15" selection-start="726" selection-end="726" vertical-scroll-proportion="0.5562914">
+        <state line="31" column="34" selection-start="839" selection-end="839" vertical-scroll-proportion="0.615894">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -286,7 +286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="16" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.81858903">
+        <state line="24" column="43" selection-start="540" selection-end="540" vertical-scroll-proportion="0.37513998">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
