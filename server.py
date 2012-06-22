@@ -47,6 +47,6 @@ class Timer(threading.Thread):
 		self.run()
 
 Timer(60*5)
-app.run(port=port)
+app.run(host='0.0.0.0', port=port)
 
 
