@@ -4,7 +4,7 @@ import time
 import threading
 
 app = Flask(__name__)
-port = 1337
+port = 80
 
 
 listeners = []
