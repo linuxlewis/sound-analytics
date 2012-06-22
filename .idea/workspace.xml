@@ -27,7 +27,7 @@
           <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="17" selection-start="944" selection-end="944" vertical-scroll-proportion="0.6754967">
+                <state line="30" column="4" selection-start="812" selection-end="812" vertical-scroll-proportion="0.5960265">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -38,7 +38,7 @@
           <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="21" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
+                <state line="26" column="8" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -51,7 +51,7 @@
           <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.05263158">
+                <state line="41" column="35" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.6774916">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -66,8 +66,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/client.py" />
       </list>
     </option>
   </component>
@@ -145,10 +145,18 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -189,6 +197,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7ad419be-9bf4-4ddc-ba09-b86c1fccf07f" name="Default" comment="" />
@@ -277,7 +303,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="944" selection-end="944" vertical-scroll-proportion="0.6754967">
+        <state line="30" column="4" selection-start="812" selection-end="812" vertical-scroll-proportion="0.5960265">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -286,7 +312,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.05263158">
+        <state line="41" column="35" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.6774916">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

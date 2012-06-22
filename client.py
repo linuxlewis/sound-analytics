@@ -5,6 +5,7 @@ from urllib import urlencode
 import socket
 
 app = Flask(__name__)
+app.config['TRAP_BAD_REQUEST_ERRORS'] = True
 port = 1337
 
 
@@ -14,16 +15,19 @@ def heartbeat():
 
 @app.route('/event', methods=['POST'])
 def event():
-	print request.form['event']
-	if request.form['event']['sound'] == 'nuts':
-		os.system("afplay ./assets/lovenuts.mp3")
-	elif request.form['event']['sound'] == 'pizza':
-		os.system("afplay ./assets/pizzaaaaaaa.mp3")
-	elif request.form['event']['sound'] == 'bagel':
-		os.system("afplay ./assets/pizzabagel.mp3")
-	elif request.form['event']['sound'] == 'steemer':
-		os.system("afplay ./assets/steemer.mp3")
-
+	event = request.json['event']
+	if event['sound'] == 'nuts':
+		path = os.path.realpath("assets/lovenuts.mp3")
+		os.system("afplay "+path)
+	elif event['sound'] == 'pizza':
+		path = os.path.realpath("assets/pizzaaaaaaa.mp3")
+		os.system("afplay "+path)
+	elif event['sound'] == 'bagel':
+		path = os.path.realpath("assets/pizzabagel.mp3")
+		os.system("afplay "+path)
+	elif event['sound'] == 'steemer':
+		path = os.path.realpath("assets/steemer.mp3")
+		os.system("afplay "+path)
 	return 'ok'
 
 #register client
@@ -32,4 +36,4 @@ data = urlencode({'ip': ip})
 register = urllib2.Request("http://192.168.1.119:8080/register")
 register.add_data(data)
 urllib2.urlopen(register).read()
-app.run(port=port)
+app.run(port=port, debug=True)
