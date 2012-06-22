@@ -12,7 +12,7 @@ listeners = []
 @app.route('/register', methods=['POST'])
 def register():
 	print request.form['ip']
-	listeners.append(request.form['ip'])
+	#listeners.append(request.form['ip'])
 
 @app.route('/email', methods=['POST'])
 def email():
@@ -50,7 +50,7 @@ class Timer(threading.Thread):
 		check_alive()
 		self.run()
 
-Timer(60*5)
-app.run(host='0.0.0.0', port=port)
+timer = Timer(60)
+app.run(host='0.0.0.0', port=port, debug=True)
 
 
