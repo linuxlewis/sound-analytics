@@ -11,27 +11,31 @@ listeners = []
 
 @app.route('/register', methods=['POST'])
 def register():
-	if request.form.has_key('ip'):
-		listeners.append(request.form['ip'])
+	print request.form['ip']
+	listeners.append(request.form['ip'])
 
 @app.route('/email', methods=['POST'])
 def email():
-	if request.form.has_key('event'):
+	if request.form['event']:
 		event = {'event':{'name':'something', 'sound':request.form['event']['sound']}}
 		send_update(event)
 
 def check_alive():
+	print '**** CHECKING ALIVE ****'
 	for listener in listeners:
 		request = urllib2.Request("http://"+listener+":"+str(port)+"/heartbeat")
+		print request.get_full_url()
 		try:
 			urllib2.urlopen(request).read()
 		except Exception as ex:
 			listeners.remove(listener)
 
 def send_update(event):
+	print '**** SENDING UPDATE ****'
 	for listener in listeners:
 		request = urllib2.Request("http://"+listener+":"+str(port)+"/event")
 		request.add_data(event)
+		print request.get_full_url()
 		try:
 			urllib2.urlopen(request).read()
 		except Exception as ex:
