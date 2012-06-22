@@ -12,13 +12,15 @@ listeners = []
 @app.route('/register', methods=['POST'])
 def register():
 	print request.form['ip']
-	#listeners.append(request.form['ip'])
+	listeners.append(request.form['ip'])
+	return 'ok'
 
 @app.route('/email', methods=['POST'])
 def email():
 	if request.form['event']:
 		event = {'event':{'name':'something', 'sound':request.form['event']['sound']}}
 		send_update(event)
+		return 'ok'
 
 def check_alive():
 	print '**** CHECKING ALIVE ****'
