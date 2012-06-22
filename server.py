@@ -4,7 +4,7 @@ import time
 from threading import Timer
 
 app = Flask(__name__)
-port = 8080
+port = 1337
 
 
 listeners = []

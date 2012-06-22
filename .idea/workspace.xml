@@ -24,10 +24,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="client.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="4" selection-start="812" selection-end="812" vertical-scroll-proportion="0.5960265">
+                <state line="35" column="52" selection-start="971" selection-end="971" vertical-scroll-proportion="0.69536424">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -48,10 +48,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="35" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.6774916">
+                <state line="8" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.012318029">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -301,18 +301,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client.py">
+    <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="812" selection-end="812" vertical-scroll-proportion="0.5960265">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state line="26" column="8" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
+    <entry file="file://$PROJECT_DIR$/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="35" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.6774916">
+        <state line="35" column="52" selection-start="971" selection-end="971" vertical-scroll-proportion="0.69536424">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
