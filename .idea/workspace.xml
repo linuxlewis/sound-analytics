@@ -24,10 +24,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="client.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="23" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.7549669">
+                <state line="11" column="39" selection-start="228" selection-end="228" vertical-scroll-proportion="0.21854305">
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -48,7 +48,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="39" column="82" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6573348">
@@ -66,8 +66,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/client.py" />
       </list>
     </option>
   </component>
@@ -301,18 +301,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client.py">
+    <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.7549669">
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state line="39" column="75" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
+    <entry file="file://$PROJECT_DIR$/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="82" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6573348">
+        <state line="11" column="39" selection-start="228" selection-end="228" vertical-scroll-proportion="0.21854305">
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

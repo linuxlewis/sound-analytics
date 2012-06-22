@@ -9,7 +9,7 @@ app.config['TRAP_BAD_REQUEST_ERRORS'] = True
 port = 1337
 
 
-@app.route('/heartbeat', methods=['POST'])
+@app.route('/heartbeat', methods=['GET','POST'])
 def heartbeat():
 	return json.dumps({'alive':True})
 
