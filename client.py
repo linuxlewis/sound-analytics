@@ -15,17 +15,17 @@ def heartbeat():
 
 @app.route('/event', methods=['POST'])
 def event():
-	event = request.json()['event']
-	if event['sound'] == 'nuts':
+	sound = request.values['sound']
+	if sound == 'nuts':
 		path = os.path.realpath("assets/lovenuts.mp3")
 		os.system("afplay "+path)
-	elif event['sound'] == 'pizza':
+	elif sound == 'pizza':
 		path = os.path.realpath("assets/pizzaaaaaaa.mp3")
 		os.system("afplay "+path)
-	elif event['sound'] == 'bagel':
+	elif sound == 'bagel':
 		path = os.path.realpath("assets/pizzabagel.mp3")
 		os.system("afplay "+path)
-	elif event['sound'] == 'steemer':
+	elif sound == 'steemer':
 		path = os.path.realpath("assets/steemer.mp3")
 		os.system("afplay "+path)
 	return 'ok'

@@ -18,10 +18,9 @@ def register():
 
 @app.route('/email', methods=['POST'])
 def email():
-	if request.json()['event']:
-		event = {'event':{'name':'something', 'sound':request.json['event']['sound']}}
-		send_update(json.dumps(event))
-		return 'ok'
+	if request.values['sound']:
+		send_update(request.values['sound'])
+	return 'ok'
 
 def check_alive():
 	while True:
@@ -40,7 +39,7 @@ def send_update(event):
 	for listener in listeners:
 		#request = urllib2.Request("http://"+listener+":"+str(port)+"/event", event, {'Content-Type':'application/json'})
 		try:
-			grequests.post("http://"+listener+":"+str(port)+"/event", data=event)
+			grequests.post("http://"+listener+":"+str(port)+"/event", params={'sound':event})
 		except Exception as ex:
 			print ex
 
