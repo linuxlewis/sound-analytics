@@ -18,7 +18,7 @@ def register():
 
 @app.route('/email', methods=['POST'])
 def email():
-	if request.json['event']:
+	if request.json()['event']:
 		event = {'event':{'name':'something', 'sound':request.json['event']['sound']}}
 		send_update(json.dumps(event))
 		return 'ok'
