@@ -15,7 +15,7 @@ def heartbeat():
 
 @app.route('/event', methods=['POST'])
 def event():
-	event = request.json['event']
+	event = request.json()['event']
 	if event['sound'] == 'nuts':
 		path = os.path.realpath("assets/lovenuts.mp3")
 		os.system("afplay "+path)
